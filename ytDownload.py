@@ -24,8 +24,9 @@ audio.download(filename = title + "audio.mp4")
 videoStream = ffmpeg.input(title + "video.mp4")
 audioStream = ffmpeg.input(title + "audio.mp4")
 
-out = ffmpeg.output(videoStream, audioStream, r"c:\Users\kev1n\Downloads", vcodec='copy', acodec='copy', strict='experimental')
-out.run()
+ffmpeg.output(audioStream, videoStream,'out_mp4').run()
+#out = ffmpeg.output(videoStream, audioStream, r"c:\Users\kev1n\Downloads", vcodec='copy', acodec='copy', strict='experimental')
+#out.run()
 
 
 print("End of program")
