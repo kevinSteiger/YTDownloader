@@ -7,4 +7,4 @@ vid = YouTube("https://www.youtube.com/watch?v=6pxRHBw-k8M")
 title = vid.title
 
 
-print(vid.streams.filter(progressive=True))
+print(vid.streams.filter(adaptive=True))
