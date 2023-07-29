@@ -8,7 +8,7 @@ title = vid.title
 
 print("You will now be downloading: " + title)
 
-stream = vid.streams.get_by_itag(313)
+stream = vid.streams.get_by_itag(22)
 print("Downloading...this may take a while")
 stream.download(output_path = r"c:\Users\kev1n\Downloads", filename = title)
 print("End of program")
