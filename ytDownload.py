@@ -1,4 +1,5 @@
 from pytube import YouTube
+#Problem: https://stackoverflow.com/questions/58456229/i-am-trying-to-download-video-using-pytube-however-for-some-reason-no-sound-is-d
 
 vid = YouTube("https://www.youtube.com/watch?v=6pxRHBw-k8M") 
 
